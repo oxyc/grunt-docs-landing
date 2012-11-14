@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Documentation</title>
+    <link rel="stylesheet" href="layout/styles.css" />
+  </head>
+  <body>
+    <h1>Documentation</h1>
+    <% _.forEach(sections, function(section) { %>
+    <h2><%= section.heading %></h2>
+    <ul>
+      <% _.forEach(section.files, function(file) { %><li>
+        <a href="<%= file.path %>"><%= file.name %></a>
+      </li><% }); %>
+    </ul>
+  <% }); %>
+  </body>
+</html>
+
