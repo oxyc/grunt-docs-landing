@@ -8,6 +8,7 @@ other generators.
 Install the plugin (not in npm yet) with `npm install git@github.com:oxyc/grunt-docs-landing.git`
 
 Load the task in in your Gruntfile.js using:
+
 ```javascript
 grunt.loadNpmTasks('grunt-docs-landing');
 ```
@@ -15,7 +16,7 @@ grunt.loadNpmTasks('grunt-docs-landing');
 ## Configuration
 
 ```javascript
-docs: {
+docspage: {
   sections: {
     js: 'docs/js/*.html', // Files will be listed under js
     php: 'docs/php/*.html' // Files will be listed under php
@@ -31,7 +32,7 @@ The template will be passed a `sections` array which looks something similar to
 this:
 
 ```
-section = [{
+sections = [{
   heading: 'js documentation',
   files: [{
     path: 'docs/js/app.html',

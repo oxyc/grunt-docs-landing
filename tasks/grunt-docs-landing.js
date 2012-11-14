@@ -4,9 +4,9 @@ module.exports = function (grunt) {
 
   var path = require('path');
 
-  grunt.registerTask('docs', 'Generate a documentation landing page', function() {
+  grunt.registerTask('docspage', 'Generate a documentation landing page', function() {
     var options = this.options()
-      , docs = grunt.config(['docs', 'sections'])
+      , docs = grunt.config(['docspage', 'sections'])
       , cb = this.async()
       , sections = [];
 
